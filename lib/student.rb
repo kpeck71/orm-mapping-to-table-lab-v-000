@@ -26,11 +26,7 @@ class Student
 
   def drop_table
     sql =  <<-SQL
-      DROP TABLE IF NOT EXISTS songs (
-        id INTEGER PRIMARY KEY,
-        name TEXT,
-        grade TEXT
-        )
+      DROP TABLE students
         SQL
       DB[:conn].execute(sql)
   end
